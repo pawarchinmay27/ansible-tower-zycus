@@ -1,0 +1,278 @@
+2018-08-08 11:38:44
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 12:31:56
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 12:36:58
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 12:52:18
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 13:07:13
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 13:16:41
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 13:19:07
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [45677]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 45677 port 22: Invalid argument\r\n", "unreachable": true}
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+
+2018-08-08 13:22:14
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+
+2018-08-08 13:30:00
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+changed: [127.0.0.1]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-08 13:31:31
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [456]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 456 port 22: Invalid argument\r\n", "unreachable": true}
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+fatal: [10.0.2.4]: FAILED! => {"changed": true, "cmd": "mkdir Good12345", "delta": "0:00:00.081597", "end": "2018-08-08 09:35:13.015281", "msg": "non-zero return code", "rc": 1, "start": "2018-08-08 09:35:12.933684", "stderr": "mkdir: cannot create directory Good12345: File exists", "stderr_lines": ["mkdir: cannot create directory Good12345: File exists"], "stdout": "", "stdout_lines": []}
+fatal: [127.0.0.1]: FAILED! => {"changed": true, "cmd": "mkdir Good12345", "delta": "0:00:00.148088", "end": "2018-08-08 19:01:30.102247", "msg": "non-zero return code", "rc": 1, "start": "2018-08-08 19:01:29.954159", "stderr": "mkdir: cannot create directory Good12345: File exists", "stderr_lines": ["mkdir: cannot create directory Good12345: File exists"], "stdout": "", "stdout_lines": []}
+	to retry, use: --limit @/root/training/chinmay.pawar/myplatform/playbook.retry
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=1    changed=0    unreachable=0    failed=1   
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
+456                        : ok=0    changed=0    unreachable=1    failed=0   
+
+
+2018-08-08 15:34:54
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [456]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 456 port 22: Invalid argument\r\n", "unreachable": true}
+fatal: [10.0.2.4]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.0.2.4 port 22: Connection timed out\r\n", "unreachable": true}
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+changed: [127.0.0.1]
+	to retry, use: --limit @/root/training/chinmay.pawar/myplatform/playbook.retry
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=0    changed=0    unreachable=1    failed=0   
+127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+456                        : ok=0    changed=0    unreachable=1    failed=0   
+
+
+2018-08-08 15:37:17
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [456]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 456 port 22: Invalid argument\r\n", "unreachable": true}
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+fatal: [127.0.0.1]: FAILED! => {"changed": true, "cmd": "mkdir GoodSejal", "delta": "0:00:00.154901", "end": "2018-08-08 21:07:15.908032", "msg": "non-zero return code", "rc": 1, "start": "2018-08-08 21:07:15.753131", "stderr": "mkdir: cannot create directory GoodSejal: File exists", "stderr_lines": ["mkdir: cannot create directory GoodSejal: File exists"], "stdout": "", "stdout_lines": []}
+	to retry, use: --limit @/root/training/chinmay.pawar/myplatform/playbook.retry
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
+456                        : ok=0    changed=0    unreachable=1    failed=0   
+
+
+2018-08-10 07:13:26
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [456]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 456 port 22: Invalid argument\r\n", "unreachable": true}
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+changed: [127.0.0.1]
+	to retry, use: --limit @/root/training/chinmay.pawar/myplatform/playbook.retry
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+456                        : ok=0    changed=0    unreachable=1    failed=0   
+
+
+2018-08-10 08:08:07
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [456]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 456 port 22: Invalid argument\r\n", "unreachable": true}
+ok: [10.0.2.4]
+ok: [127.0.0.1]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+changed: [127.0.0.1]
+	to retry, use: --limit @/root/training/chinmay.pawar/myplatform/playbook.retry
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+127.0.0.1                  : ok=2    changed=1    unreachable=0    failed=0   
+456                        : ok=0    changed=0    unreachable=1    failed=0   
+
+
+2018-08-10 08:28:33
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-10 09:56:30
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+
+
+2018-08-10 09:58:29
+/root/training/chinmay.pawar/myplatform/playbook.yml
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.2.4]
+
+TASK [Make Dir] ****************************************************************
+changed: [10.0.2.4]
+
+PLAY RECAP *********************************************************************
+10.0.2.4                   : ok=2    changed=1    unreachable=0    failed=0   
+

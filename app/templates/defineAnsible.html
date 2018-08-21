@@ -1,0 +1,35 @@
+<html>
+	<head>
+			<style>
+
+					textarea{
+
+							width:100%;
+							height:150px;
+
+						}
+						.boxsizingBorder {
+    									-webkit-box-sizing: border-box;
+       									-moz-box-sizing: border-box;
+            								 box-sizing: border-box;	
+								 }
+		
+			</style>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body>
+		<div class="w3-bar w3-black">
+			<a href="{{url_for('home')}}" class="w3-bar-item w3-button">Home</a>
+	 		<a href="{{url_for('changeFile')}}" class="w3-bar-item w3-button">Change Files</a>
+			<a href="{{url_for('viewHistory')}}" class="w3-bar-item w3-button">History</a>
+			<a href="{{url_for('logout')}}" class="w3-bar-item w3-button">Logout</a>
+		</div><br>
+		<form action="/goDynamic"  method="POST">
+			
+				Enter Your Ansible File<br><br><br>
+				<textarea name="ansibleContent" rows="10" size="50">{{ansibleContent}}</textarea><br><br><br>
+				<input type="submit">
+		</form>
+	<body>
+</html>
+

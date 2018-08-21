@@ -1,0 +1,19 @@
+<html>
+   <head>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>			
+   <body>
+	<div class="w3-bar w3-black">
+	 	<a href="{{url_for('home')}}" class="w3-bar-item w3-button">Home</a>
+		<a href="{{url_for('viewHistory')}}" class="w3-bar-item w3-button">History</a>
+		<a href="{{url_for('logout')}}" class="w3-bar-item w3-button">Logout</a>
+		
+	</div><br>
+	<ul class="w3-ul w3-border">		
+         <h1>Click To Change File: </h1>
+		{%- for playbook in playbooks %}
+			<li><a href="{{ url_for('enterVars',changeFileName=playbook)}}">{{ playbook }}</a></li>
+		{%- endfor %}
+	</ul>   
+   </body>
+</html>

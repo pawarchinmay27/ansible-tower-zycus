@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 	</head>
+	<body>
+		<div class="w3-bar w3-black">
+			<a href="{{url_for('home')}}" class="w3-bar-item w3-button">Home</a>
+	 		<a href="{{url_for('changeFile')}}" class="w3-bar-item w3-button">Change Files</a>
+			<a href="{{url_for('viewHistory')}}" class="w3-bar-item w3-button">History</a>
+			<a href="{{url_for('logout')}}" class="w3-bar-item w3-button">Logout</a>
+		</div><br>
+		<form action="/processVarsForm" method="POST">
+			{%- for key,value in vars %}
+				<label>{{key}}<label>
+				<input name="{{key}}" value="{{value}}"><br>
+			{%- endfor %}
+			<input type="submit">
+		</form>	
+	</body>
+
+
+
+
+</html>
